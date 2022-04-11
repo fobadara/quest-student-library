@@ -32,7 +32,7 @@ class Person
     @age >= 18
   end
 
-  private :is_of_age?
+  private :of_age?
 
   # Public: Check if the person can use the service.
   #
