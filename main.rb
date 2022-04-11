@@ -28,7 +28,7 @@ class Person
   # Internal: Check if the person is of age.
   #
   # Returns true if the person is of age, false otherwise.
-  def is_of_age?
+  def of_age?
     @age >= 18
   end
 
