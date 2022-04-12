@@ -11,6 +11,8 @@ require './main'
 # student.play_hooky
 # # => '¯\(ツ)/¯'
 class Student < Person
+  attr_accessor :classroom
+
   # Public: Initializes a new Student object.
   # classroom - The String name of the classroom.
   def initialize(classroom)
@@ -25,6 +27,3 @@ class Student < Person
     '¯\(ツ)/¯'
   end
 end
-
-student = Student.new('unknown')
-puts student.play_hooky
