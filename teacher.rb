@@ -1,4 +1,4 @@
-require './main'
+require './person'
 # Public Teacher class used for creating teacher objects
 #  Teacher class inherits from person class.
 #
@@ -10,12 +10,10 @@ require './main'
 # teacher.can_use_services?
 # # => true
 class Teacher < Person
-  attr_reader :specialization
-
   # Public: Initializes a new Teacher object.
   # specialization - The String name of the specialization.
-  def initialize(specialization)
-    super
+  def initialize(age, specialization, name = 'Unknown', parent_permission: true)
+    super(age, name, parent_permission)
     @specialization = specialization
   end
 

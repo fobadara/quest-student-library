@@ -1,4 +1,4 @@
-require './main'
+require './person'
 
 # Public: Student class used for creating student objects
 #   Student class inherits from person class.
@@ -11,12 +11,10 @@ require './main'
 # student.play_hooky
 # # => '¯\(ツ)/¯'
 class Student < Person
-  attr_accessor :classroom
-
   # Public: Initializes a new Student object.
   # classroom - The String name of the classroom.
-  def initialize(classroom)
-    super
+  def initialize(age, classroom, name = 'Unknown', parent_permission: true)
+    super(age, name, parent_permission)
     @classroom = classroom
   end
 
