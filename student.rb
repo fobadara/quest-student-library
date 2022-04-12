@@ -11,14 +11,14 @@ require './main.rb'
 # student.play_hooky
 # # => '¯\(ツ)/¯'
 class Student < Person
-  # Public: Initialize a new Student object.
+  # Public: Initializes a new Student object.
   # classroom - The String name of the classroom.
   def initialize(classroom)
     super
     @classroom = classroom
   end
-  
-  # Public: Create a String.
+
+  # Public: Creates a String.
   #
   # Returns a string.
   def play_hooky
