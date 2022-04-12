@@ -1,4 +1,4 @@
-require './main.rb'
+require './main'
 
 # Public: Student class used for creating student objects
 #   Student class inherits from person class.
