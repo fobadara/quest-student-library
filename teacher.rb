@@ -11,7 +11,7 @@ require './main'
 # # => true
 class Teacher < Person
   attr_reader :specialization
-  
+
   # Public: Initializes a new Teacher object.
   # specialization - The String name of the specialization.
   def initialize(specialization)
