@@ -1,3 +1,4 @@
+require './nameable'
 # Public: Person class used for creating various person objects.
 #
 # All methods are class methods and should be called on the Person class.
@@ -7,7 +8,7 @@
 # person = Person.new(9, 'John Doe', parent_permission: true)
 # person.can_use_services?
 # # => true
-class Person
+class Person < Nameable
   # Public: Gets/Sets the String name and Interger age of the user.
   attr_accessor :name, :age
   # Public: Returns the Integer id of the user.
