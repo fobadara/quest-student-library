@@ -1,13 +1,4 @@
-# Public: Nameable class is the base component of the Person class.
-#
-# All methods are class methods and should be called on the nameable class.
-class Nameable
-  # Public: Returns NotImplementedError message of type String.
-  def correct_name
-    raise NotImplementedError, "#{self.class} has not implemented method '#{__method__}'"
-  end
-end
-
+require './nameable'
 # Public: Person class used for creating various person objects and
 #  it is a concrete component that inherits from Nameable class.
 #
@@ -76,38 +67,5 @@ class Decorator < Nameable
   # Public: Returns the String name of the person.
   def correct_name
     @nameable.correct_name
-  end
-end
-
-# Public: CapitalizeDecorator class is a concrete decorator
-#   used to capitalize the name of the person.
-#
-# All methods are class methods and should be called on the CapitalizeDecorator class.
-#
-# Examples
-# person = Person.new(22, 'maximilianus')
-# capitalizedPerson = CapitalizeDecorator.new(person_object)
-# capitalizedPerson.correct_name
-# # => "MAXIMILIANUS"
-class CapitalizeDecorator < Decorator
-  def correct_name
-    @nameable.correct_name.upcase
-  end
-end
-
-# Public: TrimmerDecorator class is a concrete decorator
-#  used to trim the name of the person.
-#
-# All methods are class methods and should be called on the TrimmerDecorator class.
-#
-# Examples
-#
-# person = Person.new(22, 'maximilianus')
-# trimmedPerson = TrimmerDecorator.new(person_object)
-# trimmedPerson.correct_name
-# # => "Maximilian"
-class TrimmerDecorator < Decorator
-  def correct_name
-    @nameable.correct_name.slice(0, 10)
   end
 end
