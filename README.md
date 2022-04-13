@@ -123,7 +123,7 @@ This will be included when app is done.
 ### Roadmap
 
 - [x] Add Person, Student, and Teacher classes.  
-- [ ] Decorate a class.
+- [x] Decorate a class.
 - [ ] Set up associations.
 - [ ] Add basic UI.
 Project 5: refactor your code.
