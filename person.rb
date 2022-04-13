@@ -31,7 +31,7 @@ class Person < Nameable
   # age  - The Integer age of the person.
   # parent_permission - The Boolean permission of the person.
   def initialize(age, name = 'unknown', parent_permission: true)
-    # super()
+    super()
     @name = name
     @age = age
     @id = rand(1..100)
@@ -69,7 +69,7 @@ class Decorator < Nameable
   #
   # nameable - The Nameable object.
   def initialize(nameable)
-    # super()
+    super()
     @nameable = nameable
   end
 
@@ -79,7 +79,7 @@ class Decorator < Nameable
   end
 end
 
-# Public: CapitalizeDecorator class is a concrete decorator 
+# Public: CapitalizeDecorator class is a concrete decorator
 #   used to capitalize the name of the person.
 #
 # All methods are class methods and should be called on the CapitalizeDecorator class.
@@ -94,6 +94,7 @@ class CapitalizeDecorator < Decorator
     @nameable.correct_name.upcase
   end
 end
+
 # Public: TrimmerDecorator class is a concrete decorator
 #  used to trim the name of the person.
 #
@@ -110,10 +111,3 @@ class TrimmerDecorator < Decorator
     @nameable.correct_name.slice(0, 10)
   end
 end
-
-# person = Person.new(22, 'maximilianus')
-# puts person.correct_name
-# capitalizedPerson = CapitalizeDecorator.new(person)
-# puts capitalizedPerson.correct_name
-# capitalizedTrimmedPerson = TrimmerDecorator.new(capitalizedPerson)
-# puts capitalizedTrimmedPerson.correct_name
