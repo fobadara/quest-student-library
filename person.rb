@@ -1,4 +1,4 @@
-require './nameable'
+require_relative './nameable'
 # Public: Person class used for creating various person objects and
 #  it is a concrete component that inherits from Nameable class.
 #
@@ -11,9 +11,9 @@ require './nameable'
 # # => true
 class Person < Nameable
   # Public: Gets/Sets the String name and Interger age of the user.
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rentals
   # Public: Returns the Integer id of the user.
-  attr_reader :id, :rental
+  attr_reader :id
 
   # Public: Initialize a new Person object.
   #
