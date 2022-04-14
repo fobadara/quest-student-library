@@ -38,7 +38,7 @@
   - [Usage](#usage)
   - [Roadmap](#roadmap)
 - [Built With 🔨](#built-with-)
-- [Authors ✍️](#authors-️)
+- [Author ✍️](#author-️)
 - [🤝 Contributors](#-contributors)
 - [📝 License](#-license)
 - [Show your support 💪](#show-your-support-)
@@ -149,7 +149,7 @@ Project 5: refactor your code.
 <p align="right">(<a href="#top">back to top</a>)</p>
 </div>
 
-## Authors ✍️
+## Author ✍️
 <div align="center">
 
 | 👤 Abdulfatai Badara  |

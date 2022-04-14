@@ -1,4 +1,4 @@
-require './person'
+require_relative './person'
 # Public: CapitalizeDecorator class is a concrete decorator
 #   used to capitalize the name of the person.
 #

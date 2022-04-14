@@ -2,8 +2,8 @@
 #
 # All methods are class methods and should be called on the Book class.
 class Rental
-  attr_accessor :date
-
+  attr_accessor :date, :book, :person
+  
   # Public: Initializes a new Rental object.
   # classroom - The String name of the classroom.
   # person - The Person object of the person renting the book.

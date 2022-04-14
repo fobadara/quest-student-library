@@ -1,4 +1,4 @@
-require './person'
+require_relative './person'
 
 # Public: Student class used for creating student objects
 #   Student class inherits from person class.
@@ -15,7 +15,7 @@ class Student < Person
   # classroom - The String name of the classroom.
   def initialize(age, classroom, name = 'Unknown', parent_permission: true)
     super(age, name, parent_permission)
-    @classroom = Classroom.new(classroom)
+    classroom.students.push(self) unless classroom.students.include?(self)
   end
 
   # Public: Creates a String.

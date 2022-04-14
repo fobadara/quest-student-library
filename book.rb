@@ -2,7 +2,7 @@
 #
 # All methods are class methods and should be called on the Book class.
 class Book
-  attr_reader :rental
+  attr_accessor :rentals, :title, :author
 
   # Public: Initializes a new Book object.
   # title - The String title of the book.

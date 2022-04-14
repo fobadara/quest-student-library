@@ -1,4 +1,4 @@
-require './person'
+require_relative './person'
 # Public: TrimmerDecorator class is a concrete decorator
 #  used to trim the name of the person.
 #
