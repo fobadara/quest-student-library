@@ -13,7 +13,7 @@ class Person < Nameable
   # Public: Gets/Sets the String name and Interger age of the user.
   attr_accessor :name, :age
   # Public: Returns the Integer id of the user.
-  attr_reader :id
+  attr_reader :id, :rental
 
   # Public: Initialize a new Person object.
   #
@@ -27,6 +27,7 @@ class Person < Nameable
     @age = age
     @id = rand(1..100)
     @parent_permission = parent_permission
+    @rental = []
   end
 
   # Internal: Check if the person is of age.
@@ -48,6 +49,11 @@ class Person < Nameable
   # Public: Returns the String name of the person.
   def correct_name
     name
+  end
+
+  # Public: add details of new rental
+  def add_rental(rental)
+    @rentals.push(rental)
   end
 end
 

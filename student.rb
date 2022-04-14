@@ -15,7 +15,7 @@ class Student < Person
   # classroom - The String name of the classroom.
   def initialize(age, classroom, name = 'Unknown', parent_permission: true)
     super(age, name, parent_permission)
-    @classroom = classroom
+    @classroom = Classroom.new(classroom)
   end
 
   # Public: Creates a String.
