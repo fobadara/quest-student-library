@@ -8,7 +8,7 @@ class Rental
   # classroom - The String name of the classroom.
   # person - The Person object of the person renting the book.
   # book - The Book object of the book being rented.
-  def initialize(person, book, date = DateTime.now())
+  def initialize(person, book, date)
     @date = date
     @person = person
     @book = book

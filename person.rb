@@ -10,6 +10,8 @@ require_relative './nameable'
 # person.can_use_services?
 # # => true
 class Person < Nameable
+  # rubocop: disable Style/OptionalBooleanParameter(RuboCop)
+
   # Public: Gets/Sets the String name and Interger age of the user.
   attr_accessor :name, :age, :rentals
   # Public: Returns the Integer id of the user.
@@ -21,14 +23,15 @@ class Person < Nameable
   # name - The String name of the person.
   # age  - The Integer age of the person.
   # parent_permission - The Boolean permission of the person.
-  def initialize(age, name = 'unknown', parent_permission: true)
+  def initialize(age, name = 'unknown', parent_permission = true)
     super()
     @name = name
     @age = age
-    @id = rand(1..100)
+    @id = rand(1..1000)
     @parent_permission = parent_permission
     @rental = []
   end
+  # rubocop: enable Style/OptionalBooleanParameter(RuboCop)
 
   # Internal: Check if the person is of age.
   #
