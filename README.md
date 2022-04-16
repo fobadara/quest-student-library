@@ -38,7 +38,7 @@
   - [Usage](#usage)
   - [Roadmap](#roadmap)
 - [Built With 🔨](#built-with-)
-- [Authors ✍️](#authors-️)
+- [Author ✍️](#author-️)
 - [🤝 Contributors](#-contributors)
 - [📝 License](#-license)
 - [Show your support 💪](#show-your-support-)
@@ -124,7 +124,7 @@ This will be included when app is done.
 
 - [x] Add Person, Student, and Teacher classes.  
 - [x] Decorate a class.
-- [ ] Set up associations.
+- [x] Set up associations.
 - [ ] Add basic UI.
 Project 5: refactor your code.
 - [ ] Preserve data.
@@ -149,7 +149,7 @@ Project 5: refactor your code.
 <p align="right">(<a href="#top">back to top</a>)</p>
 </div>
 
-## Authors ✍️
+## Author ✍️
 <div align="center">
 
 | 👤 Abdulfatai Badara  |

@@ -1,4 +1,4 @@
-require './person'
+require_relative './person'
 # Public Teacher class used for creating teacher objects
 #  Teacher class inherits from person class.
 #
