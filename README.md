@@ -125,8 +125,8 @@ This will be included when app is done.
 - [x] Add Person, Student, and Teacher classes.  
 - [x] Decorate a class.
 - [x] Set up associations.
-- [ ] Add basic UI.
-Project 5: refactor your code.
+- [x] Add basic UI.
+- [ ] Refactor your code.
 - [ ] Preserve data.
 - [ ] Unit tests.
 
