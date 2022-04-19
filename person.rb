@@ -11,7 +11,9 @@ require_relative './nameable'
 # # => true
 class Person < Nameable
   # rubocop: disable Style/OptionalBooleanParameter(RuboCop)
-
+  # rubocop: disable Style/ClassVars(RuboCop)
+  @@people = []
+  # rubocop: enable Style/ClassVars(RuboCop)
   # Public: Gets/Sets the String name and Interger age of the user.
   attr_accessor :name, :age, :rentals
   # Public: Returns the Integer id of the user.
