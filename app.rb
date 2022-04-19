@@ -21,7 +21,6 @@ class App
 
   # rubocop: disable Metrics/MethodLength(RuboCop)
   # rubocop: disable CyclomaticComplexity(RuboCop)
-  # rubocop: disable Metrics/AbcSize(RuboCop)
 
   # Public: used to navigate through the app.
   def menu
@@ -78,4 +77,3 @@ end
 
 # rubocop: enable Metrics/MethodLength(RuboCop)
 # rubocop: enable CyclomaticComplexity(RuboCop)
-# rubocop: enable Metrics/AbcSize(RuboCop)

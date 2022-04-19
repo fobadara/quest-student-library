@@ -50,9 +50,6 @@ class BookListing
   end
 end
 
-# rubocop: disable Metrics/MethodLength
-# rubocop: disable Metrics/AbcSize
-
 # Public: Class used to list all people.
 #
 # All methods are class methods and should be called on the PeopleListing class.
@@ -115,6 +112,3 @@ class RentalsListing
     gets.chomp
   end
 end
-
-# rubocop: enable Metrics/MethodLength
-# rubocop: enable Metrics/AbcSize
