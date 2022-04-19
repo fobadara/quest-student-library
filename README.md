@@ -126,7 +126,7 @@ This will be included when app is done.
 - [x] Decorate a class.
 - [x] Set up associations.
 - [x] Add basic UI.
-- [ ] Refactor your code.
+- [x] Refactor your code.
 - [ ] Preserve data.
 - [ ] Unit tests.
 
