@@ -38,26 +38,7 @@ end
 # PersonCreator.create
 class PersonCreator
   # Public: Initializes a new Student object.
-  def self.create_a_student
-    print 'Enter the student\'s name: '
-    name = gets.chomp
-
-    print 'Enter the student\'s age: '
-    age = gets.chomp.to_i
-
-    print 'Class: '
-    classroom = Classroom.new(gets.chomp)
-
-    parent_permission = false
-    print 'Has parent permission? [Y/N]: '
-    input = gets.chomp.downcase
-    parent_permission = true unless input == 'n'
-
-    student = Student.new(age, classroom, name, parent_permission)
-    Person.class_variable_get(:@@people).push(student)
-    puts 'Student created!'
-    sleep 2
-  end
+  
 
   # Public: Initializes a new Teacher object.
   def self.create_a_teacher
