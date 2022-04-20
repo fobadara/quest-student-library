@@ -5,12 +5,6 @@ require_relative './lists'
 
 # Public: App class used to run main logic.
 #
-# All methods are class methods and should be called on the App class.
-#
-# Examples
-#
-# app = App.new
-# app.run
 class App
   # Public: Main method used to run the app.
   def run
