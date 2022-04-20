@@ -2,6 +2,9 @@
 #
 # All methods are class methods and should be called on the Book class.
 class Rental
+  # rubocop: disable Style/ClassVars(RuboCop)
+  @@rentals = []
+  # rubocop: enable Style/ClassVars(RuboCop)
   attr_accessor :date, :book, :person
 
   # Public: Initializes a new Rental object.
